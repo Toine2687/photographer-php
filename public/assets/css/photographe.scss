@@ -1,0 +1,108 @@
+@import "style.scss";
+
+body {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+
+    span {
+        font-family: "Lobster", cursive;
+        font-size: 2em;
+        transform: rotate(10deg);
+    }
+}
+
+p {
+    font-size: 1.4em;
+}
+
+section {
+    width: 80vw;
+    margin: 10vh auto;
+}
+
+//-----------INTRO
+
+#artistIntro {
+    padding-top: 5vh;
+}
+
+#artistIntroContainer {
+    display: flex;
+    justify-content: space-evenly;
+
+    div {
+        width: 80%;
+    }
+}
+
+#artistFaceDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+
+    img {
+        width: 50%;
+        border-radius: 100%;
+        box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: .1);
+        // align-self: center;
+    }
+}
+
+#artistIntroEnd {
+    text-align: center;
+    margin: 10vh auto;
+}
+
+//-----------HISTORY & STYLE
+
+#artistHistory,
+#artistStyleTopContainer {
+    display: flex;
+}
+
+#historyImg,
+#artistStyleImg {
+    width: 40%;
+
+    img {
+        width: 100%;
+    }
+}
+
+#historyText,
+#artistStyleTopLeftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+    padding: 0 2em;
+}
+
+//-----------TO CONTACT
+
+#artistToContact {
+    h2 {
+        text-align: center;
+        font-size: 2em !important;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    body{overflow-x:hidden;}
+
+    #artistIntroContainer, #artistHistory, #artistHistory div, #artistStyle, #artistStyle div {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #artistFaceDiv, #artistIntroContainer div {
+        margin: auto;
+        width: 100%;
+    }
+}

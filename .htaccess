@@ -1,0 +1,20 @@
+# Suivi des liens symboliques 
+Options +FollowSymlinks 
+
+# Activation du mod rewrite d'Apache 
+RewriteEngine On
+
+RewriteRule  ^photographe-mariage-amiens$ /controllers/homeCtrl.php
+RewriteRule  ^journal$ /controllers/blogCtrl.php
+RewriteRule  ^conditions-generales$ /controllers/cguCtrl.php
+RewriteRule  ^mentions-legales$ /controllers/legalCtrl.php
+RewriteRule  ^le-photographe$ /controllers/photographeCtrl.php
+RewriteRule  ^portfolio$ /controllers/portfolioCtrl.php
+RewriteRule  ^contact$ /controllers/contactCtrl.php
+RewriteRule  ^article$ /controllers/articleCtrl.php
+
+RewriteRule  ^clients$ /controllers/user/user-loginCtrl.php
+RewriteRule  ^ma-galerie$ /controllers/user/user-boardCtrl.php
+
+#Redirection 404
+ErrorDocument 404 /controllers/404Ctrl.php

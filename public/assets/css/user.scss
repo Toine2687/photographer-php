@@ -1,0 +1,31 @@
+p, button{
+    font-size: 1.4em;
+}
+#userLoginHero{
+    background-image: url(/public/assets/img/photo/userLogin-photographe-mariage-oise.webp);
+}
+#userBoardHero{
+    background-image: url(/public/assets/img/photo/userBoardHero-photographe-mariage-hauts-de-france.jpg);
+}
+.firstSection{
+    margin-top: 22vh;
+    height: 90vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    //-----------
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 5vh;
+    h1, h2{
+        font-size: 2.4em;
+        background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.7);
+        width: 100%;
+        text-align: center;
+        padding: .4em;
+        margin: 0;
+    }
+}

@@ -1,0 +1,204 @@
+
+@import "style.scss";
+
+$phone-top : "only screen and (max-width: 768px)";
+$tablet-min : "only screen and (min-width: 768px)";
+$tablet-top : "only screen and (max-width: 1200px)";
+$desktop-min : "only screen and (min-width: 1200px)";
+* {
+    font-family: 'champagne', sans-serif;
+}
+
+//page contact
+#contactBanner {
+    background-image: url(../img/photo/banner-contact-photographe-mariage-oise.webp);
+    height: 90vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    //-----------
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 15vh;
+}
+
+h1 {
+    font-size: 2.4em;
+    background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.7);
+    width: 100%;
+    text-align: center;
+    padding: .4em;
+    margin: 0;
+}
+
+#contactSpeechSection {
+    font-size: 1.4em;
+    margin: auto;
+    margin-bottom: 8vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    h2,
+    #introSpeech {
+        text-align: center;
+        align-self: center;
+    }
+}
+
+#introSpeech {
+    font-size: 1.2em;
+}
+
+
+//formulaire uniquement
+#homeContactSection {
+    font-family: 'champagne';
+    margin: auto;
+    width: 80vw;
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 10vh;
+}
+
+#homeContactIntro {
+    font-size: 1.4em;
+}
+
+#homeContactForm {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+fieldset {
+    border: none;
+    width: 100%;
+    display: flex;
+    margin-bottom: 1vh;
+    justify-content: space-between;
+    padding: 3vh;
+    flex-wrap: wrap;
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        padding: 1vh 1vw;
+        font-size: .9em;
+        border-radius: 10px;
+        border: none;
+        border-bottom: 3px solid black;
+        border-top: 1px solid black;
+        box-shadow: 1px 2px 2px rgba($color: #000000, $alpha: 0.5);
+    }
+
+    label {
+        margin-bottom: 1vh;
+    }
+}
+
+#names {
+    width: 80vw;
+}
+
+#phoneMail input,
+#locationDiv {
+    width: 30vw;
+}
+
+#event {
+    display: flex;
+    flex-wrap: wrap;
+
+    input {
+        width: 80%;
+        margin: 1vh auto;
+    }
+}
+
+
+#ceremDiv {
+    justify-content: center;
+    gap: 2vw;
+
+    input {
+        box-shadow: none;
+        height: .8em;
+        width: .8em;
+        margin: 1vh auto;
+    }
+}
+
+
+textarea {
+    font-family: 'champagne';
+    padding: 1vh 1vw;
+    width: 80vw;
+    max-height: 30vh;
+    padding: 1vh 1vw;
+    font-size: .9em;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 3px solid black;
+    border-top: 1px solid black;
+    box-shadow: 1px 2px 4px rgba($color: #000000, $alpha: 0.2);
+}
+
+button {
+    font-size: 1.1em;
+    padding: 1vh 2vw;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+
+    &:hover {
+        filter: invert(1);
+        transition: .5s;
+    }
+}
+
+@media #{$tablet-top} {
+
+    #contactBanner {
+        height: 40vh;
+    }
+    #homeContactSection{
+        width: 100%;
+        margin: 0;
+    }
+    #homeContactForm{
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        font-size: 1em;
+        fieldset{
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            div{
+                align-items: center;
+                margin: 0;
+                width: 100%;
+                input{
+                    width: 80%;
+                }
+            }
+        }
+        button{
+            margin: 2vh 0 2vh 0;
+        }
+        #messageDiv label{
+            display: none;
+        }
+    }
+}

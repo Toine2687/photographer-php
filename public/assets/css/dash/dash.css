@@ -1,0 +1,94 @@
+* {
+  font-family: "champagne", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(20deg, rgb(15, 2, 2) 5%, rgb(36, 163, 190) 91.1%);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-family: "gambarino", serif;
+  font-weight: 800;
+  text-decoration: underline;
+  font-size: 1.3em;
+  overflow: hidden;
+}
+
+tr a {
+  font-size: 1em;
+}
+
+tr:hover {
+  background-color: rgb(210, 210, 210);
+  font-weight: bolder;
+}
+tr:hover a {
+  text-decoration-line: underline;
+  overflow: hidden;
+}
+
+nav img {
+  width: 8vw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4em;
+}
+a:hover {
+  transform: scale(1.1);
+}
+
+section {
+  width: 100vw;
+  margin-top: 10vh;
+  height: 100%;
+}
+
+.container {
+  font-size: 1.4em;
+  width: 80%;
+  min-height: 50vh;
+  background-color: rgba(242, 242, 242, 0.5);
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-top: 8vh !important;
+}
+
+.formInputLine {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#adminCheckbox {
+  justify-content: center;
+}
+
+#userProfilePic {
+  height: 20%;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  section {
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=dash.css.map */

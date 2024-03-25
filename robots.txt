@@ -1,0 +1,5 @@
+User-agent: Googlebot
+Disallow: /controllers/dash
+Disallow: /controllers/user
+Disallow: /controllers/blog
+Disallow: /public/uploads/
